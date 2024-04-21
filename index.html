@@ -3,12 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 		<link rel="website icon" type="png" href="./images/pokemon icon.png" />
 		<link rel="stylesheet" href="/style.css" />
 		<title>PokeApi</title>
@@ -17,45 +14,87 @@
 		<header>
 			<div class="title">
 				<img
-					src="./images/pokemon-logo-removebg-preview.png"
+					src="./images/pokemon-logo.png"
 					alt="title-pokemon"
 				/>
 			</div>
 			<nav>
 				<ul class="list-pokemon">
-					<li class="nav-item"><button class="btn btn-header" id="view-all">ver todos</button></li>
-					<li class="nav-item"><button class="btn btn-header normal" id="normal">Normal</button></li>
-					<li class="nav-item"><button class="btn btn-header fire" id="fire">Fire</button></li>
-					<li class="nav-item"><button class="btn btn-header water" id="water">Water</button></li>
-					<li class="nav-item"><button class="btn btn-header grass" id="grass">Grass</button></li>
-					<li class="nav-item"><button class="btn btn-header electric" id="electric">Electric</button></li>
-					<li class="nav-item"><button class="btn btn-header ice" id="ice">Ice</button></li>
-					<li class="nav-item"><button class="btn btn-header fighting" id="fighting">Fighting</button></li>
-					<li class="nav-item"><button class="btn btn-header poison" id="poison">Poison</button></li>
-					<li class="nav-item"><button class="btn btn-header ground" id="ground">Ground</button></li>
-					<li class="nav-item"><button class="btn btn-header flying" id="flying">Flying</button></li>
-					<li class="nav-item"><button class="btn btn-header psychic" id="psychic">Psychic</button></li>
-					<li class="nav-item"><button class="btn btn-header bug" id="bug">Bug</button></li>
-					<li class="nav-item"><button class="btn btn-header rock" id="rock">Rock</button></li>
-					<li class="nav-item"><button class="btn btn-header ghost" id="ghost">Ghost</button></li>
-					<li class="nav-item"><button class="btn btn-header dark" id="dark">Dark</button></li>
-					<li class="nav-item"><button class="btn btn-header dragon" id="dragon">Dragon</button></li>
-					<li class="nav-item"><button class="btn btn-header steel" id="steel">Steel</button></li>
-					<li class="nav-item"><button class="btn btn-header fairy" id="fairy">Fairy</button></li>
+					<li class="nav-item">
+						<button class="btn-header view" id="view-all">ver todos</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header normal" id="normal">Normal</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header fire" id="fire">Fire</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header water" id="water">Water</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header grass" id="grass">Grass</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header electric" id="electric">
+							Electric
+						</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header ice" id="ice">Ice</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header fighting" id="fighting">
+							Fighting
+						</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header poison" id="poison">Poison</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header ground" id="ground">Ground</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header flying" id="flying">Flying</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header psychic" id="psychic">Psychic</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header bug" id="bug">Bug</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header rock" id="rock">Rock</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header ghost" id="ghost">Ghost</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header dark" id="dark">Dark</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header dragon" id="dragon">Dragon</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header steel" id="steel">Steel</button>
+					</li>
+					<li class="nav-item">
+						<button class="btn-header fairy" id="fairy">Fairy</button>
+					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<div class="pokemon-all" id="pokemon-all">
-				<div class="pokemon">
-                    <p class="id-back">#025</p>
-                    <div class="pokemon-image">
-                        <img
-						src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-						alt="bulbasour"/>
-                    </div>
+			<div class="all-pokemon" id="all-pokemon">
+				<!-- <div class="pokemon card-grass">
+					<h2 class="id">001</h2>
+					<div class="pokemon-image">
+						<img
+							src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+							alt="bulbasour"
+						/>
+					</div>
 					<div class="information-personal">
-						<h2 class="id">#001</h2>
 						<h1 class="name">Bulbasur</h1>
 					</div>
 					<div class="information-type">
@@ -66,30 +105,12 @@
 						<p class="shape">7m</p>
 						<p class="shape">69kg</p>
 					</div>
-				</div>
-                <div class="pokemon">
-                    <p class="id-back">#025</p>
-                    <div class="pokemon-image">
-                        <img
-						src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-						alt="bulbasour"/>
-                    </div>
-
-					<div class="information-personal">
-						<h2 class="id">#001</h2>
-						<h1 class="name">Bulbasur</h1>
-					</div>
-					<div class="information-type">
-						<p class="type grass">Grass</p>
-						<p class="type poison">Poison</p>
-					</div>
-					<div class="information-shape">
-						<p class="shape">7m</p>
-						<p class="shape">69kg</p>
-					</div>
-				</div>
+				</div> -->
 			</div>
 		</main>
-        <script src="./script.js" defer></script>
+		<script src="./script.js" defer></script>
 	</body>
 </html>
+
+
+

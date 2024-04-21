@@ -28,7 +28,7 @@
     --psychic: #FF5BAE;    
     --bug: #87A922;
     --rock: #C08B5C;
-    --ghost: #DDDDDD;
+    --ghost: #001C30;
     --dark: #1E0342;   
     --dragon: #F3B95F;
     --steel: #9BB0C1;    
@@ -389,7 +389,7 @@ main {
 .card-normal:hover {
     background: linear-gradient(
         var(--normal) 40%, 
-        #F7F6BB 25%
+        #ECCA9C 25%
         );
 }
 
@@ -403,21 +403,21 @@ main {
 .card-water:hover {
     background: linear-gradient(
         var(--water) 40%, 
-        #F7F6BB 25%
+        #A3FFD6 25%
         );
 }
 
 .card-grass:hover {
     background: linear-gradient(
         var(--grass) 40%, 
-        #F7F6BB 25%
+        #637A9F 25%
         );
 }
 
 .card-electric:hover {
     background: linear-gradient(
         var(--electric) 40%, 
-        #F7F6BB 25%
+        #59B4C3 25%
         );
 }
 
@@ -430,21 +430,21 @@ main {
 .card-fighting:hover {
     background: linear-gradient(
         var(--fighting) 40%, 
-        #F7F6BB 25%
+        #B2A59B 25%
         );
 }
 
 .card-poison:hover {
     background: linear-gradient(
         var(--poison) 40%, 
-        #F7F6BB 25%
+        #E1C78F 25%
         );
 }
 
 .card-ground:hover {
     background: linear-gradient(
         var(--ground) 40%, 
-        #F7F6BB 25%
+        #B2533E 25%
         );
 }
 
@@ -458,28 +458,28 @@ main {
 .card-psychic:hover {
     background: linear-gradient(
         var(--psychic) 40%, 
-        #F7F6BB 25%
+        #E19898 25%
         );
 }
 
 .card-bug:hover {
     background: linear-gradient(
         var(--bug) 40%, 
-        #F7F6BB 25%
+        #FD8D14 25%
         );
 }
 
 .card-rock:hover {
     background: linear-gradient(
         var(--rock) 40%, 
-        #F7F6BB 25%
+        #A0BFE0 25%
         );
 }
 
 .card-ghost:hover {
     background: linear-gradient(
         var(--ghost) 40%, 
-        #F7F6BB 25%
+        #C5DFF8 25%
         );
 }
 .card-dark:hover {
@@ -492,7 +492,7 @@ main {
 .card-dragon:hover {
     background: linear-gradient(
         var(--dragon) 40%, 
-        #F7F6BB 25%
+        #D4E2D4 25%
         );
 }
 
@@ -506,6 +506,6 @@ main {
 .card-fairy:hover {
     background: linear-gradient(
         var(--fairy) 40%, 
-        #F7F6BB 25%
+        #D7BBF5 25%
         );
 }

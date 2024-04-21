@@ -1,5 +1,5 @@
 const allPokemon = document.getElementById('all-pokemon')
-const btnHeader = document.querySelectorAll('#btn-header')
+const btnHeader = document.querySelectorAll('.btn-header')
 const API = 'https://pokeapi.co/api/v2/pokemon/'
 
 // fetch(`${API}/${id}`)
@@ -51,3 +51,26 @@ function showPokemon(pokemon){
      
     allPokemon.append(divCardPokemon)
 }
+
+btnHeader.forEach(button => button.addEventListener('click', function(event) {
+    allPokemon.innerHTML = ''
+    const buttonId = event.currentTarget.id;
+
+    for (let i = 1; i < 161; i++) {
+        fetch(API + i)
+        .then(response => response.json())
+        .then(data => {
+
+            if (buttonId == 'view-all') {
+                showPokemon(data)
+            } else {
+                const types = data.types.map(type => type.type.name);
+                if(types.some(type => type.includes(buttonId))){
+                    showPokemon(data);
+                }
+            }
+        })
+        .catch(error => console.log(error))   
+        }
+}
+))
