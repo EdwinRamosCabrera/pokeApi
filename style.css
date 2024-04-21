@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Noto Serif", serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bolder;
 }
 
@@ -14,6 +14,25 @@
     --white: #fafafb;
     --light-grey: #EEEEEE;
     --dark-grey: #DDDDDD;
+
+    --normal: #B0C5A4;
+    --fire: #F2613F;
+    --water: #378CE7;
+    --grass: #0D9276;
+    --electric: #EBE224;
+    --ice: #40A2D8;
+    --fighting: #E72929;
+    --poison: #A040A0;        
+    --ground: #EBC49F;
+    --flying: #A890F0;
+    --psychic: #FF5BAE;    
+    --bug: #87A922;
+    --rock: #C08B5C;
+    --ghost: #DDDDDD;
+    --dark: #1E0342;   
+    --dragon: #F3B95F;
+    --steel: #9BB0C1;    
+    --fairy: #FF7ED4;
 }
 
 body {
@@ -76,47 +95,49 @@ main {
     margin: 2rem;
 }
 
-.pokemon-all {
+.all-pokemon {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     gap: 3rem;
-    
 }
 
 .pokemon {
-    height: 20rem;
-    width: 23rem;
+    height: 25rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    padding: 5px;
-    background-color: var(--white);
+    padding: 1rem;
     overflow: hidden;
-    position: relative;
-    isolation: isolate;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     font-size: 0.8rem;
 }
 
-.id-back {
-    position: absolute;
-    top: 0.2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 8rem;
+.pokemon h2 {
+    font-family: "Platypi", serif;
     font-weight: bolder;
-    z-index: -1;
-    color: var(--dark-grey);
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 0.4rem;
+    align-self: flex-start;
 }
 
+.pokemon-image {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .pokemon-image img{
-    width: 100%;
-    max-width: 9rem;
+    max-width: 8rem;
 }
 
 .information-personal, .information-type, .information-shape {
@@ -134,16 +155,8 @@ main {
 }
 
 .information-personal h1 {
-    font-family: "Merriweather", serif;
+    font-family: "Platypi", serif;
     font-weight: bolder;
-}
-
-.information-personal h2 {
-    font-family: "Merriweather", serif;
-    font-weight: bolder;
-    border-radius: 8px;
-    background-color: #EEE7DA;
-    padding: 0.5rem;
 }
 
 .type {
@@ -245,6 +258,254 @@ main {
     background-color: #FF7ED4;
 }
 
-.card-grass {
+/* color for pokemon cards */
 
+.card-normal {
+    background: linear-gradient(
+        var(--normal) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-fire {
+    background: linear-gradient(
+        var(--fire) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-water {
+    background: linear-gradient(
+        var(--water) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-grass {
+    background: linear-gradient(
+        var(--grass) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-electric {
+    background: linear-gradient(
+        var(--electric) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-ice {
+    background: linear-gradient(
+        var(--ice) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-fighting {
+    background: linear-gradient(
+        var(--fighting) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-poison {
+    background: linear-gradient(
+        var(--poison) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-ground {
+    background: linear-gradient(
+        var(--ground) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-flying {
+    background: linear-gradient(
+        var(--flying) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-psychic {
+    background: linear-gradient(
+        var(--psychic) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-bug {
+    background: linear-gradient(
+        var(--bug) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-rock {
+    background: linear-gradient(
+        var(--rock) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-ghost {
+    background: linear-gradient(
+        var(--ghost) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-dark {
+    background: linear-gradient(
+        var(--dark) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-dragon {
+    background: linear-gradient(
+        var(--dragon) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-steel {
+    background: linear-gradient(
+        var(--steel) 40%, 
+        var(--white) 25%
+        );
+}
+
+.card-fairy {
+    background: linear-gradient(
+        var(--fairy) 40%, 
+        var(--white) 25%
+        );
+} 
+
+.card-normal:hover {
+    background: linear-gradient(
+        var(--normal) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-fire:hover {
+    background: linear-gradient(
+        var(--fire) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-water:hover {
+    background: linear-gradient(
+        var(--water) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-grass:hover {
+    background: linear-gradient(
+        var(--grass) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-electric:hover {
+    background: linear-gradient(
+        var(--electric) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-ice:hover {
+    background: linear-gradient(
+        var(--ice) 40%, 
+        #F7F6BB 25%
+        );
+}
+.card-fighting:hover {
+    background: linear-gradient(
+        var(--fighting) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-poison:hover {
+    background: linear-gradient(
+        var(--poison) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-ground:hover {
+    background: linear-gradient(
+        var(--ground) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-flying:hover {
+    background: linear-gradient(
+        var(--flying) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-psychic:hover {
+    background: linear-gradient(
+        var(--psychic) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-bug:hover {
+    background: linear-gradient(
+        var(--bug) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-rock:hover {
+    background: linear-gradient(
+        var(--rock) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-ghost:hover {
+    background: linear-gradient(
+        var(--ghost) 40%, 
+        #F7F6BB 25%
+        );
+}
+.card-dark:hover {
+    background: linear-gradient(
+        var(--dark) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-dragon:hover {
+    background: linear-gradient(
+        var(--dragon) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-steel:hover {
+    background: linear-gradient(
+        var(--steel) 40%, 
+        #F7F6BB 25%
+        );
+}
+
+.card-fairy:hover {
+    background: linear-gradient(
+        var(--fairy) 40%, 
+        #F7F6BB 25%
+        );
 }
